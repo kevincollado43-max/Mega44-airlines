@@ -1,0 +1,20 @@
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;margin:0;background:#f5f7fb;color:#0b1220}
+.container{max-width:720px;margin:32px auto;padding:20px;background:white;border-radius:10px;box-shadow:0 6px 18px rgba(9,30,66,0.08)}
+h1{text-align:center;margin:0 0 16px}
+.task-form{display:flex;gap:8px;margin-bottom:12px}
+.task-form input[type="date"]{width:150px}
+.task-form input[type="text"],.task-form input{flex:1;padding:10px;border:1px solid #dfe6ef;border-radius:6px}
+.task-form button{padding:10px 14px;border:none;background:#0066ff;color:white;border-radius:6px;cursor:pointer}
+.controls{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.filters button{background:transparent;border:1px solid transparent;padding:6px 10px;border-radius:6px;cursor:pointer}
+.filters button.active{background:#eef4ff;border-color:#cfe0ff}
+.actions{display:flex;gap:8px;align-items:center}
+.actions button{padding:6px 10px;border-radius:6px;border:1px solid #e6ecf8;background:#fff;cursor:pointer}
+.task-list{list-style:none;padding:0;margin:0}
+.task-item{display:flex;align-items:center;gap:8px;padding:10px;border-bottom:1px solid #f0f4f8}
+.task-item .title{flex:1}
+.task-item.completed .title{text-decoration:line-through;color:#7a8a9b}
+.small{font-size:13px;color:#7a8a9b}
+.task-actions button{margin-left:6px}
+.footer{margin-top:18px;text-align:center;color:#7a8a9b;font-size:13px}
+@media (max-width:600px){.task-form{flex-direction:column}.task-form input[type="date"]{width:100%}}

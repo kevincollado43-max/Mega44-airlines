@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mega44 To‑Do</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Mega44 To‑Do</h1>
+
+    <form id="task-form" class="task-form">
+      <input id="task-input" placeholder="Add a new task" autocomplete="off" />
+      <input id="due-input" type="date" />
+      <button type="submit">Add</button>
+    </form>
+
+    <div class="controls">
+      <div class="filters">
+        <button data-filter="all" class="active">All</button>
+        <button data-filter="active">Active</button>
+        <button data-filter="completed">Completed</button>
+      </div>
+      <div class="actions">
+        <button id="export-btn">Export</button>
+        <input id="import-file" type="file" accept="application/json" />
+        <button id="clear-btn">Clear All</button>
+      </div>
+    </div>
+
+    <ul id="task-list" class="task-list" aria-live="polite"></ul>
+
+    <footer class="footer">Open-source, frontend-only. Data stored in your browser's localStorage.</footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
